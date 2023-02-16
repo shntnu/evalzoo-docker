@@ -3,7 +3,7 @@
 Docker image for [evalzoo](https://github.com/cytomining/evalzoo).
 
 ```bash
-docker run -it --rm -v /path/to/evalzoo:/evalzoo shntnu/evalzoo:latest
+docker run -it --rm -v /path/to/your/data:/input shntnu/evalzoo:latest
 ```
 
 ## Build
