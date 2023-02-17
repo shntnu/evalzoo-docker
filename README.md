@@ -17,7 +17,7 @@ docker tag evalzoo:latest shntnu/evalzoo:latest
 docker push shntnu/evalzoo:latest
 ```
 
-Log in at <http://localhost:8787/> using the crendentials `rstudio` / `yourpassword`.
+Log in at <http://localhost:8787/> using the crendentials `rstudio` / `rstudio`.
 
 Look up <https://rocker-project.org/> to learn more about the base image.
 
