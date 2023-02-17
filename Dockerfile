@@ -23,10 +23,9 @@ RUN sudo apt-get install -y libxml2-dev zlib1g-dev
 
 WORKDIR /home/rstudio
 
-ENV RENV_PATHS_LIBRARY /home/rstudio/renvtest/renv/library
+ENV RENV_PATHS_LIBRARY /home/rstudio/evalzoo/renv/library
 
-RUN git clone https://github.com/shntnu/renvtest.git && cd renvtest && R -e "renv::restore()"
-# RUN cd /home/rstudio && git clone https://github.com/cytomining/evalzoo.git && cd evalzoo && R -e "renv::restore()"
+RUN git clone https://github.com/cytomining/evalzoo.git && cd evalzoo && R -e "renv::restore()"
 
 RUN chown -R rstudio /home/rstudio
 
