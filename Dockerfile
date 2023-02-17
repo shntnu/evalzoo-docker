@@ -19,7 +19,11 @@ RUN R -e "install.packages('remotes', repos = c(CRAN = 'https://cloud.r-project.
 RUN R -e "remotes::install_github('rstudio/renv@${RENV_VERSION}')"
 
 # Install dependencies
+RUN sudo apt-get update
+
 RUN sudo apt-get install -y libxml2-dev zlib1g-dev
+
+RUN sudo apt-get install -y --no-install-recommends libxt6
 
 WORKDIR /home/rstudio
 
