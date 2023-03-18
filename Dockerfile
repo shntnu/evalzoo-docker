@@ -6,7 +6,7 @@ LABEL org.opencontainers.image.licenses="BSD-3-Clause" \
 
 ENV RENV_PATHS_CACHE=/renv/cache
 
-ENV RENV_VERSION 0.16.0
+ENV RENV_VERSION 0.17.2
 
 # Add environment variables to Renviron
 RUN echo "" >> ${R_HOME}/etc/Renviron
